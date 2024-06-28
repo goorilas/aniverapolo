@@ -1,0 +1,48 @@
+@use 'variaveis';
+
+.xerif {
+
+    &__contador {
+        margin-bottom: 18px;
+
+        &__text {
+            text-align: center;
+            font-size: 32px;
+            color: variaveis.$colorPrimary;
+            font-family: "Aladin", cursive;
+        }
+    
+        &__regressivo {
+            text-align: center;
+            color: variaveis.$colorPrimary;
+            font-size: 50px;
+        }
+    }
+
+    &__estrela {
+        &__img {
+            display: flex;
+            margin: auto;
+            width: 250px;
+            height: 250px;
+
+            @media (max-width:640px) {
+                display: flex;
+                margin: auto;
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+            animation: rotateHorizontal 2s linear infinite;
+        }
+
+        @keyframes rotateHorizontal {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+}

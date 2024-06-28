@@ -1,0 +1,47 @@
+@use 'variaveis';
+
+.show {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    @media (max-width:640px) {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    &--color1 {
+        background-image: linear-gradient(360deg, #a8e4ff, transparent);
+    }
+    
+    &--color2 {
+        background-image: linear-gradient(360deg, transparent, #a8e4ff);
+    }
+
+    &--color3 {
+        background-image: linear-gradient(360deg, #a8e4ff, transparent);
+    }
+
+    &__img {
+        width: 350px;
+        height: 250px;
+
+        @media (max-width:640px) {
+            display: flex;
+            margin: 0;
+        }
+    }
+
+    &__text {
+        font-size: 30px;
+        color: variaveis.$colorPrimary;
+        padding-right: 36px;
+
+        @media (max-width:640px) {
+            padding: 0;
+            font-size: 26px;
+        }
+    }
+}
+
