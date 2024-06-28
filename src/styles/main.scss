@@ -30,3 +30,15 @@ body {
         width: 100%;
     }
 }
+
+.footer {
+    background-color: variaveis.$colorSecondary;
+    
+    &__text {
+        display: block;
+        text-align: center;
+        margin-top: 8px;
+        padding: 8px;
+        color: variaveis.$colorPrimary;
+    }
+}
